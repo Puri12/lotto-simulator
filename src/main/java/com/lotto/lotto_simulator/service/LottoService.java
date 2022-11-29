@@ -138,9 +138,12 @@ public class LottoService {
 //                .build();
 
         return ResponseDto.success(winLottoMap);
-        }
+    }
 
-
+    // 등수를 구하는 새로운 로직 Test
+    public ResponseDto<?> test(Long num) {
+        return ResponseDto.success("success");
+    }
 
 
     }

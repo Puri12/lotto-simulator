@@ -24,4 +24,10 @@ public class LottoController {
                                     @RequestBody UniqueCodeDto uniqueIdDto) {
         return lottoService.lottoInfo(num, uniqueIdDto);
     }
+
+    @CrossOrigin
+    @PostMapping("/test/{num}")
+    public ResponseDto<?>  tset(@PathVariable Long num){
+        return lottoService.test(num);
+    }
 }

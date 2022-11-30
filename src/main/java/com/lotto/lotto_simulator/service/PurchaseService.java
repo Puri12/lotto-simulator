@@ -86,11 +86,12 @@ public class PurchaseService {
         jdbcLottoRepository.batchInsertLottos(lottos);
 
 
-        LottosResponseDto lottosResponseDto = LottosResponseDto.builder()
-                .lottoArray(lottoList)
-                .uniqueCode(uniqueCode)
-                .build();
-        return ResponseDto.success(lottosResponseDto);
+//        LottosResponseDto lottosResponseDto = LottosResponseDto.builder()
+//                .lottoArray(lottoList)
+//                .uniqueCode(uniqueCode)
+//                .build();
+//        return ResponseDto.success(lottosResponseDto);
+        return ResponseDto.success("success");
     }
     
     // 수동으로 로또 번호 생성

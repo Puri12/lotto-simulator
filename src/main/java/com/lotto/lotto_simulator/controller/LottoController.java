@@ -27,7 +27,13 @@ public class LottoController {
 
     @CrossOrigin
     @PostMapping("/test/{num}")
-    public ResponseDto<?>  tset(@PathVariable Long num){
+    public ResponseDto<?> test(@PathVariable Long num){
         return lottoService.test(num);
+    }
+
+    @CrossOrigin
+    @GetMapping("/test/{num}")
+    public ResponseDto<?> getTest(@PathVariable Long num){
+        return lottoService.getTest(num);
     }
 }

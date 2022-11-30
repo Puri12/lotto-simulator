@@ -103,19 +103,21 @@ public class RoundService {
 
             lottoCnt++;
         }
-        LankRoundDto builder = LankRoundDto.builder()
-                .id(round.getId())
-                .Count(roundCount)
-                .BonusNum(round.getBonus())
-                .date(round.getDate())
-                .RoundArray(rounds)
-                .firstRank(firstRank)
-                .secondRank(secondRank)
-                .thirdRank(thirdRank)
-                .fourthRank(fourthRank)
-                .fifthRank(fifthRank)
-                .build();
-        return ResponseDto.success(builder);
+//        LankRoundDto builder = LankRoundDto.builder()
+//                .id(round.getId())
+//                .Count(roundCount)
+//                .BonusNum(round.getBonus())
+//                .date(round.getDate())
+//                .RoundArray(rounds)
+//                .firstRank(firstRank)
+//                .secondRank(secondRank)
+//                .thirdRank(thirdRank)
+//                .fourthRank(fourthRank)
+//                .fifthRank(fifthRank)
+//                .build();
+//        return ResponseDto.success(builder);
+
+        return ResponseDto.success("success");
     }
 
     @Transactional
